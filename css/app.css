@@ -1,29 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #434343;
 }
 
-.navbar-default {
-    background: rgba(0, 0, 0, 0.50);
-    border: none;
-    color: #FFF;
-    border-radius: 0px;
+nav {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Mono', 'Lucida Console', 'Monaco', monospace;
+    letter-spacing: 1px;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: #FFF;
+.navbar-default .navbar-nav > li > a {
+    color: #ddd;
 }
 
-.primary-banner {
-    background-image: radial-gradient(ellipse at 0% bottom, rgba(19,24,29,0.7) 0%,rgba(19,24,29,0) 60%),radial-gradient(ellipse at 90% bottom, #1A2B3A 0%,rgba(82,63,140,0) 40%);
-    background-color: #1a2b3a;
-    padding-top: 45px;
-    padding-bottom: 30px;
-    color: #FFF;
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav {
+    margin-top: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
 }
 
 h1 {
     font-weight: 900;
     line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+h2, h3 {
+    text-transform: uppercase;
+    font-family: 'Ubuntu Mono', 'Lucida Console', 'Monaco', monospace;
+    color: #434343;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-default {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: #FFF;
+    border-radius: 0px;
+    padding-top: 20px;
+}
+
+.primary-banner {
+    background-image: url(../images/blur.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-color: #1a2b3a;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#services .service {
+    background-position: left 25px;
+    background-repeat: no-repeat;
+    background-size: 65px;
+    padding-left: 80px;
+    padding-right: 25px;
+    min-height: 100px;
+}
+
+#services .service-digital {
+    background-image: url(../images/service-digital.png);
+}
+
+#services .service-creative {
+    background-image: url(../images/service-creative.png);
+}
+
+#services .service-production {
+    background-image: url(../images/service-production.png);
 }
 
 .text-important {
@@ -58,85 +122,29 @@ h1 {
 }
 
 .grey-block {
-    background: #efefef;
+    background: #d3d3d3;
     padding-bottom: 30px;
+}
+
+.contact-block {
+    background-color: #5c5a5b;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.contact-block h2 {
+    color: #fff;
     text-align: center;
 }
 
-.logos {
-    padding-bottom: 15px;
-}
-
-//.logos .row > div:nth-child(1) img {
-//    margin-top: 46px;
-//}
-//
-//.logos .row > div:nth-child(2) img {
-//    margin-top: 15px;
-//}
-//
-//.logos .row > div:nth-child(3) img {
-//    margin-top: 28px;
-//}
-//
-//.logos .row > div:nth-child(4) img {
-//    margin-top: 43px;
-//}
-
-.contact-block {
-    background: url(../images/bg-angles.png) repeat;
-    padding: 30px 0px;
-    color: #FFF;
-}
-
-.examples-block {
-    background: #222;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.examples-block .carousel {
-    border: 3px solid #FFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.60);
-}
-
-.carousel-caption {
-    background: rgba(0, 0, 0, 0.80);
-    padding-bottom: 60px;
-}
-
-.grey-block h4 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.modal {
-    z-index: 9999;
-}
-
-.services-block {
-    font-size: 16px;
-    line-height: 1.6;
-    padding: 30px 0px;
-}
-
-.services li {
-    margin: 20px 0px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-label {
-    font-size: 16px;
-    margin: 10px 0px;
+.contact-block a {
+    color: #fff;
 }
 
 a,
 a:hover {
-    color: #ff6c2c;
+    color: #2db0ba;
+    text-decoration: none;
 }
 
 .contact-block h4 {
@@ -161,8 +169,22 @@ a:hover {
     float: left;
 }
 
-@media (min-width: 1650px) {
+#map {
+    border: 10px solid #888;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .navbar-default {
+        padding-top: 0;
+    }
+
     .primary-banner {
-        padding-top: 90px;
+        padding-top: 80px;
+        padding-bottom: 35px;
+    }
+
+    #services .service {
+        background-position: left top;
     }
 }
