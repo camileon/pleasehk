@@ -5,15 +5,24 @@
     <meta charset="utf-8">
     <title>Please!</title>
     <!-- Latest compiled and minified CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/app.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/elastislide.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/app.css" />
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- JavaScript -->
-    <script src="scripts/wufoo.js"></script>
+    <script type="text/javascript" src="scripts/modernizr.custom.17475.js"></script>
+    <script type="text/javascript" src="scripts/jquery.elastislide.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.elastislide-list').elastislide();
+        $('body').append('<script type="text/javascript" src="scripts/lightbox.min.js"></scri' + 'pt>');
+      });
+    </script>
     <!--[if lt IE 10]>
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -71,27 +80,51 @@
     </div>
     <div id="works" class="container text-center">
         <h2>Our Works</h2>
-        <div class="row">STUFF HERE</div>
-    </div>
-    <div class="grey-block">
-        <div id="staff" class="container">
-            <h2>Our Staff</h2>
-            <div class="row">
-                <div class="col-md-4 staff-tony">
-                    <h3>Tony</h3>
-                    <p>It's a demo copy only, please don't read it! It's a demo copy only.</p>
-                </div>
-                <div class="col-md-4 staff-becky">
-                    <h3>Becky</h3>
-                    <p>It's a demo copy only, please don't read it! It's a demo copy only.</p>
-                </div>
-                <div class="col-md-4 staff-nigel">
-                    <h3>Nigel</h3>
-                    <p>It's a demo copy only, please don't read it! It's a demo copy only.</p>
-                </div>
-            </div>
+        <div class="row">
+          <ul class="elastislide-list">
+            <!-- BEGIN COPY HERE -->
+            <li><a href="http://big" data-lightbox="must be unique"><img src="http://small" alt="description of image" /></a></li>
+            <!-- END COPY HERE -->
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/1.jpg" data-lightbox="1"><img src="http://tympanus.net/Development/Elastislide/images/small/1.jpg" alt="1" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/2.jpg" data-lightbox="2"><img src="http://tympanus.net/Development/Elastislide/images/small/2.jpg" alt="2" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/3.jpg" data-lightbox="3"><img src="http://tympanus.net/Development/Elastislide/images/small/3.jpg" alt="3" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+            <li><a href="http://tympanus.net/Development/Elastislide/images/large/4.jpg" data-lightbox="4"><img src="http://tympanus.net/Development/Elastislide/images/small/4.jpg" alt="4" /></a></li>
+          </ul>
         </div>
     </div>
+
+    <!-- HERE'S WHAT YOU CAN USE TO MAKE ANOTHER IMAGE THINGY -->
+    <!--       <ul class="elastislide-list"> -->
+    <!--         <1!-- BEGIN COPY HERE --1> -->
+    <!--         <li><a href="http://big" data-lightbox="must be unique"><img src="http://small" alt="description of image" /></a></li> -->
+    <!--       </ul> -->
+
+
+    <!-- <div class="grey-block"> -->
+    <!--     <div id="staff" class="container"> -->
+    <!--         <h2>Our Staff</h2> -->
+    <!--         <div class="row"> -->
+    <!--             <div class="col-md-4 staff-tony"> -->
+    <!--                 <h3>Tony</h3> -->
+    <!--                 <p>It's a demo copy only, please don't read it! It's a demo copy only.</p> -->
+    <!--             </div> -->
+    <!--             <div class="col-md-4 staff-becky"> -->
+    <!--                 <h3>Becky</h3> -->
+    <!--                 <p>It's a demo copy only, please don't read it! It's a demo copy only.</p> -->
+    <!--             </div> -->
+    <!--             <div class="col-md-4 staff-nigel"> -->
+    <!--                 <h3>Nigel</h3> -->
+    <!--                 <p>It's a demo copy only, please don't read it! It's a demo copy only.</p> -->
+    <!--             </div> -->
+    <!--         </div> -->
+    <!--     </div> -->
+    <!-- </div> -->
     <div id="clients" class="container text-center">
         <h2>Our Clients</h2>
         <div class="row">STUFF HERE</div>

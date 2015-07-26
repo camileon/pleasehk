@@ -90,6 +90,10 @@ h3 {
     background-image: url(../images/service-production.png);
 }
 
+#works {
+  margin-bottom: 25px;
+}
+
 .text-important {
     color: #ff6c2c;
     font-weight: bold;
