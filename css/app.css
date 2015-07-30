@@ -80,11 +80,11 @@ h3 {
 }
 
 #services .service-digital {
-    background-image: url(../images/service-digital.png);
+    background-image: url(../images/service-creative.png);
 }
 
 #services .service-creative {
-    background-image: url(../images/service-creative.png);
+    background-image: url(../images/service-digital.png);
 }
 
 #services .service-production {
